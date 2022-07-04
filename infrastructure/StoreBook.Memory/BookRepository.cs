@@ -14,7 +14,7 @@ namespace StoreBook.Memory
         
         public Book[] GetAllByTitle(string titlePart)
         {
-            return books.Where(books => book.Title.Contains(titlePart))
+            return books.Where(book => book.Title.Contains(titlePart))
                 .ToArray();
         }
     }
